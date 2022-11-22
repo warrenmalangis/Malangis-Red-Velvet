@@ -184,7 +184,8 @@ li {
   text-decoration: underline;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px), screen and (max-height: 400px) and
+(orientation: landscape) {
   html {
     max-width: 100%;
     overflow-x: hidden;
@@ -195,12 +196,11 @@ li {
 
 .landing-description .landing-page-title {
     margin-top: 150px;
-    margin-right: 55px;
-    font-size: 80px;
+    margin-right: 40px;
+    font-size: 70px;
     padding-bottom: 40px;
   }
   .landing-description .landing-page-sub {
-    margin-right: 50px;
     font-size: 12px;
   }
 .btn {
@@ -245,7 +245,6 @@ li {
   margin-top: -600px;
 }
 }
-
 /* Hide nav links on screens with width below 768px  */
 @media (min-width: 768px) {
   .header {
